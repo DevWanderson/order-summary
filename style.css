@@ -2,10 +2,9 @@
 
 
 body {
-    background-color: hsl(225, 100%, 94%);
-    background-image: url(/images/pattern-background-desktop.svg);
+    background: url(images/pattern-background-desktop.svg) hsl(225,100%,94%);
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: 100% 50vmin;
     margin: 0;
     padding: 0;
     display: flex;
