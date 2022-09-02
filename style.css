@@ -1,0 +1,337 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+
+body {
+    background-color: hsl(225, 100%, 94%);
+    background-image: url(/images/pattern-background-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    /*Sugestion user @azhar1038*/
+    height: 100vh;
+    width: 100vw;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Red Hat Display', sans-serif;
+    flex-direction: column;
+}
+
+section {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 450px;
+    border-radius: 20px;
+    padding-bottom: 50px;
+}
+
+img {
+    padding: 0;
+    margin: 0;
+    border-radius: 20px 20px 0 0;
+}
+
+h1 {
+    font-weight: 900;
+    font-size: 20pt;
+    margin-top: 50px;
+    margin-bottom: 10px;
+}
+
+p {
+    text-align: center;
+    padding-left: 50px;
+    padding-right: 50px;
+    color: hsl(224, 23%, 55%);
+}
+
+#planInfo {
+    background-color: hsl(225, 100%, 98%);
+    display: flex;
+    width: 300px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    padding: 0 25px 0 25px ;
+    margin: 10px 0 10px 0;
+    gap: 5rem;
+}
+
+#edit {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+}
+
+#edit img{
+    width: 50px;
+    height: 50px;
+}
+
+#plan {
+    margin: 30px 0 30px 0;
+}
+
+h2 {
+    font-weight: 900;
+    font-size: 16px;
+    margin: 0 0 5px 0;
+}
+
+#price {
+    padding: 0;
+    margin: 0;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+#changePlan {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: flex-end;
+    color: hsl(245, 75%, 52%);
+    font-weight: 900;
+}
+
+#changePlan:hover {
+    color: hsl(244, 82%, 68%);
+    text-decoration: none;
+
+}
+
+button {
+    width: 350px;
+    height: 50px;
+    border: none;
+    border-radius: 10px;
+    background-color: hsl(245, 75%, 52%);
+    color: white;
+    box-shadow: 0px 15px 15px hsl(245, 75%, 90%);
+    font-weight: 700;
+    font-size: 16px;
+    margin: 20px 0 30px 0;
+}
+
+button:hover {
+    background-color: hsl(244, 82%, 68%);
+}
+
+#cancel {
+    color: hsl(224, 23%, 55%);
+    font-weight: 700;
+    text-decoration: none;
+}
+
+#cancel:hover {
+    color: black;
+    font-weight: 900;
+}
+
+/*======MOBILE CSS======*/
+@media screen and (max-width: 800px){
+    body {
+        background-image: url(/images/pattern-background-mobile.svg);
+        background-repeat: no-repeat;
+        display: flex;
+        height: 90vh;
+        width: 100vw;
+    }
+    section {
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 370px;
+        border-radius: 20px;
+        padding-bottom: 30px;
+    }
+
+    img {
+        padding: 0;
+        margin: 0;
+        width: 370px;
+        border-radius: 20px 20px 0 0;
+    }
+    h1 {
+        font-weight: 900;
+        font-size: 20pt;
+        margin-top: 20px;
+        margin-bottom: 10px;
+    }
+    #planInfo {
+        background-color: hsl(225, 100%, 98%);
+        width: auto;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        border-radius: 10px;
+        margin: auto;
+        gap: 3rem;
+    }
+    #plan {
+        margin: 25px 0 25px 0;
+    }
+    button {
+        width: 315px;
+        height: 50px;
+        border: none;
+        border-radius: 10px;
+        background-color: hsl(245, 75%, 52%);
+        color: white;
+        box-shadow: 0px 15px 15px hsl(245, 75%, 90%);
+        font-weight: 700;
+        font-size: 16px;
+        margin: 20px 0 30px 0;
+    }
+}
+
+@media screen and (max-width: 375px){
+    body {
+        background-color: hsl(225, 100%, 94%);
+        background-image: url(/images/pattern-background-desktop.svg);
+        background-repeat: no-repeat;
+        background-size: auto;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        /*Sugestion user @azhar1038*/
+        height: 100vh;
+        width: 100vw;
+        align-items: center;
+        justify-content: center;
+        font-family: 'Red Hat Display', sans-serif;
+        flex-direction: column;
+    }
+    
+    section {
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100vw;
+        border-radius: 20px;
+        padding-bottom: 50px;
+    }
+    
+    img {
+        padding: 0;
+        margin: 0;
+        width: 100vw;
+        border-radius: 20px 20px 0 0;
+    }
+    
+    h1 {
+        font-weight: 900;
+        font-size: 20pt;
+    }
+    
+    p {
+        text-align: center;
+        color: hsl(224, 23%, 55%);
+    }
+    
+    #planInfo {
+        background-color: hsl(225, 100%, 98%);
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        border-radius: 10px;
+        width: 100vw;
+        gap: 1rem;
+        padding: 0%;
+    }
+    
+    #edit {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    #edit img{
+        width: auto;
+        height: auto;
+    }
+    
+    #plan {
+        margin: 30px 0 30px 0;
+    }
+    
+    h2 {
+        font-weight: 900;
+        font-size: 16px;
+        margin: 0 0 5px 0;
+    }
+    
+    #price {
+        padding: 0;
+        margin: 0;
+        font-size: 16px;
+        font-weight: 500;
+    }
+    
+    #changePlan {
+        display: flex;
+        flex-direction: row;
+        justify-content: end;
+        align-items: flex-end;
+        color: hsl(245, 75%, 52%);
+        font-weight: 900;
+    }
+    
+    #changePlan:hover {
+        color: hsl(244, 82%, 68%);
+        text-decoration: none;
+    
+    }
+    
+    button {
+        width: auto;
+        height: 50px;
+        border: none;
+        border-radius: 10px;
+        background-color: hsl(245, 75%, 52%);
+        color: white;
+        box-shadow: 0px 15px 15px hsl(245, 75%, 90%);
+        font-weight: 700;
+        font-size: 16px;
+        margin: 20px 0 30px 0;
+        padding: 0 10px 0 10px;
+    }
+    
+    button:hover {
+        background-color: hsl(244, 82%, 68%);
+    }
+    
+    #cancel {
+        color: hsl(224, 23%, 55%);
+        font-weight: 700;
+        text-decoration: none;
+    }
+    
+    #cancel:hover {
+        color: black;
+        font-weight: 900;
+    }
+}
+
+/*======FOOTER======*/
+.attribution { 
+    font-size: 11px; 
+    text-align: center;
+    margin-top: 5px;
+}
+
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
